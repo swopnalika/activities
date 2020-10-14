@@ -3,11 +3,44 @@
 * Add main method.
 * Write System.out.println statement inside method with some message.
 * Define 2 static blocks with some statements inside it.
-* Define 2 static blocks with some staement inside it.
 * Create object of Test class inside main method using new. Run the Test class. See the output.
-```
+```java
+public class Test {
+    static int a;
+    static int b;
+    static int c;
+    
+    //static block1
+    static {
+        System.out.println("Im in static block 1");
+        a = 10;
+        b = 20;
+        c = a+b;
+     }
+     
+    //static block2
+    static
+    {
+        System.out.println("Im in static block 2");
 
+    }
+    //non-static block
+    {
+        System.out.println(" Im in non static block");
+    }
+    public static void main(String args[]) {
+        System.out.println("I m in main method");
+        System.out.println("Value of a = " + a);
+        System.out.println("Value of b = " + b);
+        System.out.println("sum of two numbers = " + c);
+        new Test();
+    }
+}
 ```
+***
+Output  
+
+***
 # Activity 2 : Static Methods
 * Define a class called Test.java
 * Define main method.
@@ -41,6 +74,59 @@
 * call m2() using the reference variable var. Run the class. Verify output.
 * Inside main method call m1() without object. Run the class. Verify output.
 * What is the default value for x and y you are getting here?
+### Soln. ###
+```java
+public class Test {
+    private static int x;
+    public String y;
+
+    static {
+        System.out.println(x);
+        System.out.println(y); // compile time error as non static field can't be accessed from a static block
+    }
+
+    {
+    // non static block will not be executed until the creation of object
+        System.out.println(x);
+        System.out.println(y);
+    }
+
+    public static void m1(){
+    // method will not be executed until the method call - no need of object to call static met.
+        System.out.println(x);
+        System.out.println(y); // compile time error
+    }
+
+    public void m2(){ 
+     // method will not be executed until the method call - need a object to call the non static method
+        System.out.println(x);
+        System.out.println(y);
+    }
+
+    public static void main(String[] args) {
+        System.out.println(x);
+        System.out.println(y); // compile time error - non- static can not be called from static context
+        Test var = new Test(); // this will invoke non static block
+        var.m2(); // call m2() and execute it
+        m1(); // direct call to static method from a static block
+        // the default value of string field is = null
+        // the default value of int field is = 0
+    }
+}
+
+```
+***Output***     
+0  
+0  
+0  
+null  
+0  
+null  
+0  
+
+* All the answers are given via comment lines in the above program
+
+
 # Activity 6 : Variable Declaration & Intialization
 * You may see compilation error with this activity. Define a class called Test.java
 * Define a main method.
