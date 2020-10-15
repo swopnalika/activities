@@ -55,6 +55,7 @@ sum of two numbers = 30
 * Call m1() from m2()
 * From main method call m1() without creating object.
 * Add a static block. call m1() from static block without using object. verify the output.
+### Soln. ###
 ```java
 public class Test{
 
@@ -82,6 +83,10 @@ public class Test{
     }
 }
 ```
+***Output***  
+sum=328350  
+I m in static block 2  
+sum=328350
 
 # Activity 3 : Non Static Methods
 * Define a class called Test.java
@@ -133,13 +138,13 @@ public class Test {
     }
 
     public static void m1(){
-    // method will not be executed until the method call - no need of object to call static met.
+    // method will not be executed until the method call - no need of object to call static method.
         System.out.println(x);
         System.out.println(y); // compile time error
     }
 
     public void m2(){ 
-     // method will not be executed until the method call - need a object to call the non static method
+     // method will not be executed until the method call - need an object to call the non-static method.
         System.out.println(x);
         System.out.println(y);
     }
@@ -165,7 +170,7 @@ null
 null  
 0  
 
-* All the answers are given via comment lines in the above program
+
 
 
 # Activity 6 : Variable Declaration & Intialization
