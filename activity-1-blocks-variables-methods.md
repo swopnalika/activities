@@ -4,6 +4,7 @@
 * Write System.out.println statement inside method with some message.
 * Define 2 static blocks with some statements inside it.
 * Create object of Test class inside main method using new. Run the Test class. See the output.
+### Soln. ###
 ```java
 public class Test {
     static int a;
@@ -38,7 +39,7 @@ public class Test {
     }
 }
 ```
-***   
+***Output***  
 I am in static block 1  
 I am in static block 2  
 I am in non static block  
@@ -47,7 +48,6 @@ Value of a = 10
 Value of b = 20  
 sum of two numbers = 30
 
-***
 # Activity 2 : Static Methods
 * Define a class called Test.java
 * Define main method.
@@ -55,6 +55,13 @@ sum of two numbers = 30
 * Call m1() from m2()
 * From main method call m1() without creating object.
 * Add a static block. call m1() from static block without using object. verify the output.
+### Soln. ###
+```java
+
+```
+***Output***  
+
+
 # Activity 3 : Non Static Methods
 * Define a class called Test.java
 * Define main method.
@@ -63,6 +70,12 @@ sum of two numbers = 30
 * Inside main method create object of Test using new. Test var = new Test().
 * using above reference variable of Test call m1()
 * Add a non static block. call m1() from non static block. verify the outout.
+### Soln. ###
+```java
+
+```
+***Output***
+
 # Activity 4 : Parameterized Methods
 * Define a class called Test.java
 * Define a main method.
@@ -144,6 +157,45 @@ null
 * Define a non static block. Initialize y = "hello"; and print y. Run the class. Verify output.
 * Define a non static method m2(). Initialize y = "bye"; and print y. Run the class. Verify output.
 * Inside main method create object of Test using new. Test var = new Test(); From the main method call var.m2(). Run the class. Verify output.
+### Soln. ###
+```java
+public class Test {
+    private static int x;
+    public String y;
+
+    static { // static blocks executes at the time of class load
+        x = 20;
+        System.out.println(x);
+    }
+
+    { // non static block will not be executed until the creation of object
+        y = "hello";
+        System.out.println(y);
+    }
+
+    public static void m1(){// method will not be executed until the method call - no need of object to call static met.
+        x = 30;
+        System.out.println(x);
+    }
+
+    public void m2(){ // method will not be executed until the method call - need a object to call the non static method
+        y = "bye";
+        System.out.println(y);
+    }
+
+    public static void main(String[] args) {
+        System.out.println(x);
+        Test var = new Test(); // this will invoke non static block
+        var.m2(); // call m2() and execute it
+
+    }
+}
+```
+***Output***  
+20  
+20  
+hello  
+bye  
 # Activity 7 : Final Variables or Constants
 * Define a class called Test.java
 * Define a main method.
