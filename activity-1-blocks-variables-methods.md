@@ -21,12 +21,12 @@ public class Test {
     //static block2
     static
     {
-        System.out.println("Im in static block 2");
+        System.out.println("I m in static block 2");
 
     }
     //non-static block
     {
-        System.out.println(" Im in non static block");
+        System.out.println("I m in non static block");
     }
     public static void main(String args[]) {
         System.out.println("I m in main method");
@@ -37,8 +37,12 @@ public class Test {
     }
 }
 ```
-***
-Output  
+***   
+I m in main method  
+Value of a = 10  
+Value of b = 20  
+sum of two numbers = 30  
+I m in non static block
 
 ***
 # Activity 2 : Static Methods
