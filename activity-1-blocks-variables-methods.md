@@ -128,6 +128,25 @@ I m in non-static block 1
 * Define a main method.
 * Create a static method sum(int x, int y) and having return type as int. This should give sum of x + y
 * Call sum(10, 20) from main method and print the result inside main method
+```java
+public class Test {
+
+    //static method with variable passed in parameter
+    public static int sum(int x, int y) {
+        return x + y;
+    }
+
+    //main method
+    public static void main(String[] args) {
+        System.out.println("sum of the 2 numbers:");
+        System.out.println(sum(10, 20));
+
+    }
+}
+```
+***Output***  
+sum of the 2 numbers:  
+30
 # Activity 5 : Variable Declaration
 * You may see compilation error with this activity. Define a class called Test.java
 * Define a main method.
