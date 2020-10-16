@@ -267,3 +267,26 @@ bye
 * Define a main method.
 * Declare a final static variable x of int type. Try to initialize this 2 times.
 * Declare a final non static variable y of int type. Try to initialize this 2 times.
+### Soln. ###
+```java
+public class Test {
+
+    final static int x;
+
+    static {
+        x = 10; //initializing static final variable
+    }
+
+    public static void main(String[] args) {
+
+        final int y;
+        y = 100;//can be initialized only once
+
+        System.out.println("hello" + y);
+        System.out.println(x);
+    }
+}
+```
+***Output***  
+hello100  
+100
