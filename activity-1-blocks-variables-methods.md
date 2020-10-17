@@ -128,6 +128,7 @@ I m in non-static block 1
 * Define a main method.
 * Create a static method sum(int x, int y) and having return type as int. This should give sum of x + y
 * Call sum(10, 20) from main method and print the result inside main method
+### Soln. ###
 ```java
 public class Test {
 
