@@ -1,6 +1,11 @@
-### Q1 Write a simple example of a Product class where it uses this constructor with paremeterized constructor ###
-*Solution
-### Q2 Does toString() method present in java.lang.Object class? If yes what the implementaion for toString() method given by java.lang.Object class ###
+# Q1 
+Write a simple example of a Product class where it uses this constructor with paremeterized constructor.
+```java
+
+```
+# Q2 
+Does toString() method present in java.lang.Object class? If yes what the implementaion for toString() method given by java.lang.Object class.
+* Yes, the toString() is present in java.lang.Object class.
 # Q3
 Override toString() method in the class A (as given below) such that it will print the value of i, j, k.
 ```java
@@ -49,6 +54,57 @@ class A {
 ```
 * Solution
 ```java
+public class Test {
+    public static void main(String[] args) {
+        A a = new A(10, 20);
+        a.setK(400);
+        System.out.println(a);
+    }
+}
+
+class A {
+    private int i;
+    private int j;
+    private int k;
+
+    public A(int i, int j) {
+        this.i = i;
+        this.j = j;
+    }
+
+    public int getI() {
+        return i;
+    }
+
+    public void setI(int i) {
+        this.i = i;
+    }
+
+    public int getJ() {
+        return j;
+    }
+
+    public void setJ(int j) {
+        this.j = j;
+    }
+
+    public int getK() {
+        return k;
+    }
+
+    public void setK(int k) {
+        this.k = k;
+    }
+
+    @Override
+    public String toString() {
+        return "A{" +
+                "i=" + i +
+                ", j=" + j +
+                ", k=" + k +
+                '}';
+    }
+}
 ```
 What is StackOverflowError. When it occurs. It comes under which package in java library.
 Will the below code compile? Find the output of the below code.
