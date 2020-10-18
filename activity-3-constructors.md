@@ -7,8 +7,8 @@
 ### Ques-2 ###
 **Does toString() method present in java.lang.Object class? If yes what the implementaion for toString() method given by java.lang.Object class**
 * Yes, the toString() is present in java.lang.Object class.
-# Q3
-Override toString() method in the class A (as given below) such that it will print the value of i, j, k.
+### Ques-3 ###
+**Override toString() method in the class A (as given below) such that it will print the value of i, j, k**
 ```java
 public class Test {
     public static void main(String[] args) {
@@ -53,7 +53,7 @@ class A {
     }
 }
 ```
-* Solution
+**Solution**
 ```java
 public class Test {
     public static void main(String[] args) {
@@ -107,8 +107,11 @@ class A {
     }
 }
 ```
-What is StackOverflowError. When it occurs. It comes under which package in java library.
-Will the below code compile? Find the output of the below code.
+### Ques-4 ###
+**What is StackOverflowError. When it occurs. It comes under which package in java library**
+
+### Ques-5 ###
+**Will the below code compile? Find the output of the below code**
 public class Test {
     public static void main(String[] args) {
         A a = new A();
@@ -129,7 +132,10 @@ class A
         this.x = x;
     }
 }
-Will the below code compile. If not why?
+```java
+```
+### Ques-6 ###
+**Will the below code compile. If not why**
 class A
 {
     private int x =11;
@@ -144,7 +150,10 @@ class A
         this.x = x;
     }
 }
-Find the output with explanation.
+```java
+```
+### Ques-7 ###
+**Find the output with explanation**
 public class Test {
     public static void main(String[] args) {
         A a = new A();
@@ -172,7 +181,8 @@ class A
         this.x = x;
     }
 }
-Will the below code compile?
+### Ques-9 ###
+**Will the below code compile?**
 class A
 {
     public A()
@@ -180,7 +190,8 @@ class A
         new A();
     }
 }
-Why the below code won't compile?
+### Ques-10 ###
+**Why the below code won't compile?**
 class A
 {
     public A()
@@ -188,7 +199,8 @@ class A
         this();
     }
 }
-Find the output with explanation?
+### Ques-11 ###
+**Find the output with explanation?**
 public class Test {
     public static void main(String[] args) {
         A a = new A();
@@ -211,7 +223,8 @@ class A
         this.hashValue = this.hashCode();
     }
 }
-Find the output with explanation?
+### Ques-12 ###
+**Find the output with explanation?**
 public class Test {
     public static void main(String[] args) {
         A a = new A();
@@ -234,7 +247,8 @@ class A
         this.hashValue = this.hashCode();
     }
 }
-Access Modifiers & Packages. Find the compilation errors & why? Find the output also by fixing them.
+### Ques-13
+**Access Modifiers & Packages. Find the compilation errors & why? Find the output also by fixing them.**
 package com.pkg1;
 
 class A
@@ -267,5 +281,8 @@ class B
 	System.out.println(a.k); // why this is not accessible?
   }
 }
-Why we use getters and setters for a class. Give an example.
-Why it is good to have private fields with public getters & setters?
+### Ques-14 ###
+**Why we use getters and setters for a class. Give an example**
+
+### Ques-15 ###
+**Why it is good to have private fields with public getters & setters?**
