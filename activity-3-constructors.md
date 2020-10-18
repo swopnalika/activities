@@ -1,10 +1,11 @@
 # Q1 
-Write a simple example of a Product class where it uses this constructor with paremeterized constructor.
+**Write a simple example of a Product class where it uses this constructor with paremeterized constructor**
+
 ```java
 
 ```
 # Q2 
-Does toString() method present in java.lang.Object class? If yes what the implementaion for toString() method given by java.lang.Object class.
+**Does toString() method present in java.lang.Object class? If yes what the implementaion for toString() method given by java.lang.Object class**
 * Yes, the toString() is present in java.lang.Object class.
 # Q3
 Override toString() method in the class A (as given below) such that it will print the value of i, j, k.
