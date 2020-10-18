@@ -112,6 +112,7 @@ class A {
 
 ### Ques-5 ###
 **Will the below code compile? Find the output of the below code**
+```java
 public class Test {
     public static void main(String[] args) {
         A a = new A();
@@ -132,10 +133,12 @@ class A
         this.x = x;
     }
 }
+```
 ```java
 ```
 ### Ques-6 ###
 **Will the below code compile. If not why**
+```java
 class A
 {
     private int x =11;
@@ -150,10 +153,12 @@ class A
         this.x = x;
     }
 }
+```
 ```java
 ```
 ### Ques-7 ###
 **Find the output with explanation**
+```java
 public class Test {
     public static void main(String[] args) {
         A a = new A();
@@ -181,8 +186,10 @@ class A
         this.x = x;
     }
 }
+```
 ### Ques-9 ###
 **Will the below code compile?**
+```java
 class A
 {
     public A()
@@ -190,8 +197,10 @@ class A
         new A();
     }
 }
+```
 ### Ques-10 ###
 **Why the below code won't compile?**
+```java
 class A
 {
     public A()
@@ -199,14 +208,17 @@ class A
         this();
     }
 }
+```
 ### Ques-11 ###
 **Find the output with explanation?**
+```java
 public class Test {
     public static void main(String[] args) {
         A a = new A();
         System.out.println(a.hashValue == a.hashCode());
     }
 }
+
 
 class A
 {
@@ -223,8 +235,10 @@ class A
         this.hashValue = this.hashCode();
     }
 }
+```
 ### Ques-12 ###
 **Find the output with explanation?**
+```java
 public class Test {
     public static void main(String[] args) {
         A a = new A();
@@ -247,8 +261,10 @@ class A
         this.hashValue = this.hashCode();
     }
 }
+```
 ### Ques-13
 **Access Modifiers & Packages. Find the compilation errors & why? Find the output also by fixing them.**
+```java
 package com.pkg1;
 
 class A
@@ -281,6 +297,7 @@ class B
 	System.out.println(a.k); // why this is not accessible?
   }
 }
+```
 ### Ques-14 ###
 **Why we use getters and setters for a class. Give an example**
 
