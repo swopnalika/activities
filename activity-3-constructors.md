@@ -2,6 +2,43 @@
 **Write a simple example of a Product class where it uses this constructor with paremeterized constructor**
 
 ```java
+public class Product {
+
+    private String name;
+    private String carType;
+
+    // Constructor.
+    public Product(){
+        this.name = "No Name";
+        this.carType = "No Type";
+    }
+    public Product(String model){
+        this.name = "Honda " + model;
+    }
+    
+    public Product(String model, String carType){
+        this.name = model;
+        this.carType = carType;
+    }
+    
+    public String getName(){
+        return this.name;
+    }
+    
+    public String getCarType(){
+        return this.name;
+    }
+
+    public static void main(String args[]){
+        Product car = new Product("Civic");
+        System.out.println( car.getName() );
+        
+        // Other Way To Initialize
+        Product car = new Product("Civic","Sedan");
+        System.out.println( car.getName() + " "+ car.getCarType() );
+        
+    }
+}
 
 ```
 ### Ques-2 ###
