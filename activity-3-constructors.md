@@ -146,10 +146,10 @@ class A {
 ```
 ### Ques-4 ###
 **What is StackOverflowError. When it occurs. It comes under which package in java library**  
-*StackOverflowError id a compile time error in java.
-*It arrises due to recursive function call, that finally leads to an infinity loop and finally JVM goes out of memory for the program.
-*This usually happens if we do not put a terminating code to the recursive funtion call.
-*It comes under the library : java.lang.StackOverflowError
+* StackOverflowError id a compile time error in java.  
+* It arrises due to recursive function call, that finally leads to an infinity loop and finally JVM goes out of memory for the program.  
+* This usually happens if we do not put a terminating code to the recursive funtion call.
+* It comes under the library : java.lang.StackOverflowError  
 
 
 ### Ques-5 ###
