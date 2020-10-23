@@ -342,6 +342,32 @@ class B
 ```
 ### Ques-14 ###
 **Why we use getters and setters for a class. Give an example**
+* Getters and setters are used to protect your data, particularly when creating classes.
+* For each instance variable, a getter method returns its value while a setter method sets or updates its value. 
+* Given this, getters and setters are also known as accessors and mutators, respectively.
+```java
+public class Vehicle {
+  private String color;
+  
+  // Getter
+  public String getColor() {
+    return color;
+  }
+  
+  // Setter
+  public void setColor(String c) {
+    this.color = c;
+  }
 
+public static void main(String[] args) {
+  Vehicle v1 = new Vehicle();
+  v1.setColor("Red");
+  System.out.println(v1.getColor());
+}
+}
+```
+**Output**    
+Red
 ### Ques-15 ###
 **Why it is good to have private fields with public getters & setters?**
+* making the field private while the getter/setter method is public, so it can be accessed by any packages.
