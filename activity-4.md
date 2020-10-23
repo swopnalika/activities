@@ -4,6 +4,35 @@ Code example of inheritance. Reuse static/non-static method(s) & static/non-stat
 Code example of instance of operator using classes as BaseParent->Parent->Child.
 ### Ques-3 ###
 Code example of super constructor.
+* Soln   
+```java
+class A
+{
+    A(){
+        super(); 
+        System.out.println("class A");
+    }
+}
+
+class B extends A{
+    B(){
+        super(); 
+        System.out.println("class B");
+    }
+}
+
+public class C extends B
+{
+    public static void main(String args[])
+    {
+        C c  = new C(); //Parent constructor will get called 
+    }
+}
+}
+```
+* Output  
+class A  
+class B
 ### Ques-4 ###
 Does multiple object created in inheritance hierarchy.
 ### Ques-5 ###
