@@ -1,7 +1,33 @@
 ### Ques-1 ###
 Code example of inheritance. Reuse static/non-static method(s) & static/non-static variable(s).
+```java
+
+```
 ### Ques-2 ###
-Code example of instance of operator using classes as BaseParent->Parent->Child.
+Code example of instanceof operator using classes as BaseParent->Parent->Child.
+* Soln.
+```java
+interface Animal{}
+class Mammal implements Animal{}
+
+public class Dog extends Mammal {
+
+   public static void main(String args[]) {
+      Mammal m = new Mammal();
+      Dog d = new Dog();
+
+      System.out.println(m instanceof Animal);
+      System.out.println(d instanceof Mammal);
+      System.out.println(d instanceof Animal);
+   }
+}
+```
+* Output  
+true  
+true   
+true  
+
+
 ### Ques-3 ###
 Code example of super constructor.
 * Soln   
