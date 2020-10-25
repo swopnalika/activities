@@ -207,6 +207,7 @@ public class Test {
     }
 }
 
+
 class A
 {
     private int x =11;
@@ -229,6 +230,8 @@ class A
     }
 }
 ```
+***Output***   
+even
 ### Ques-9 ###
 **Will the below code compile?**
 ```java
@@ -251,6 +254,8 @@ class A
     }
 }
 ```
+***This code will show compile time error : recurrsive contructor invokation***
+
 ### Ques-11 ###
 **Find the output with explanation?**
 ```java
@@ -278,6 +283,8 @@ class A
     }
 }
 ```
+***Output***  
+False
 ### Ques-12 ###
 **Find the output with explanation?**
 ```java
