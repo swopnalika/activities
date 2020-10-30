@@ -40,7 +40,8 @@ public class Test {
     }
 }
 ```
-* Why below code will not compile? What is the fix we have to do so that the code will compile.
+**Ques-7**  
+ Why below code will not compile? What is the fix we have to do so that the code will compile.
 ```java
 public class Test {
     int x;
@@ -53,7 +54,8 @@ public class Test {
     }
 }
 ```
-* Will below code will compile?
+**Ques-8**
+Will below code will compile?
 ```java
 public class Test {
     int x;
@@ -70,7 +72,7 @@ public class Test {
     }
 }
 ```
-* Find the output?
+**Ques-9** Find the output?
 ```java
 public class Test {
     int x;
@@ -82,8 +84,10 @@ public class Test {
     }
 }
 ```
-* What is the default value of int , String variables ?
-* Find the output?
+**Ques-10**
+ What is the default value of int , String variables ?
+
+**Ques-11** Find the output?
 ```java
 public class Test {
     int x;
@@ -103,7 +107,7 @@ public class Test {
     }
 }
 ```
-* Find the output?
+**Ques-12** Find the output?
 ```java
 
 public class Test {
@@ -129,7 +133,7 @@ public class Test {
     }
 }
 ```
-* Find the output? 
+**Ques-13** Find the output? 
 ```java
 
 public class Test {
@@ -155,7 +159,7 @@ public class Test {
     }
 }
 ```
-* Find the output?
+**Ques-14** Find the output?
 ```java
 public class Test {
     int x;
@@ -180,7 +184,7 @@ public class Test {
     }
 }
 ```
-* Find the output?
+**Ques-15** Find the output?
 ```java
 public class Test {
     int x;
@@ -204,7 +208,7 @@ public class Test {
     }
 }
 ```
-* Find the output?
+**Ques-16** Find the output?
 ```java
 public class Test {
     int x;
@@ -227,7 +231,8 @@ public class Test {
 }
 
 ```
-* Identify State & Behaviour. Find where the state is used. Does behavour depends on the state?
+**Ques-17**  
+ Identify State & Behaviour. Find where the state is used. Does behavour depends on the state?
 ```java
 public class Calculator
 {
@@ -246,7 +251,7 @@ public class Calculator
    }
 }
 ```
-* Find the output? Identify the static method & variables.
+**Ques-18** Find the output? Identify the static method & variables.
 ```java
 public class Test
 {
@@ -305,4 +310,5 @@ public class Test
   }
 }
 ```
-* Write some code to create Null Pointer Exception
+**Ques-19**  
+Write some code to create Null Pointer Exception
