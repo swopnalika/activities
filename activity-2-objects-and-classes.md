@@ -312,3 +312,20 @@ public class Test
 ```
 **Ques-19**  
 Write some code to create Null Pointer Exception
+* If we want to access a non static method with an instance of the class which is assigned to null, it will creat NullPointerException
+* Below is the code that creat nullPointerException
+```java
+public class Test
+{
+      public void m1()
+      {
+            System.out.println("Method m1()")
+      }
+      public static void main(String[] args)
+      {
+            Test t = null;
+            t.m1(); // this line creat nullPointerException
+      }
+}
+```
+
