@@ -65,8 +65,60 @@ Does multiple object created in inheritance hierarchy.
 Does super constructor invocation creates one more object.
 ### Ques-6 ###
 Code example of method hiding.
+```java
+class Parent {  
+
+ public static void sleep() { 
+  System.out.println("Sleeps at 11 PM");
+  }
+   } 
+ 
+class Child extends Parent {  
+
+ public static void sleep() {
+  System.out.println("Sleeps at 9 PM"); 
+  }
+   }  
+
+ public class Code {  
+
+ public static void main(String[] args) {
+  Parent p = new Parent(); 
+  Parent c = new Child(); 
+  p.sleep(); 
+  c.sleep(); 
+  }
+   }
+```
+* Output  
+Sleeps at 11 PM  
+Sleeps at 11 PM
+
 ### Ques-7 ###
 Code example of variable hiding.
+```java
+public class Shadowing
+{
+    int x = 10;
+ 
+    void methodOne(int x)
+    {
+        //local x shadows or hides global x
+ 
+        System.out.println(x);   //output : 20
+    }
+ 
+    public static void main(String[] args)
+    {
+        Shadowing shadow = new Shadowing();
+        shadow.methodOne(20);
+    }
+}
+```
+
+* Class ‘Shadowing’ has global variabe ‘x’ and it’s scope is inside the class. ‘methodOne()’ of this class also has a local variable with the same name  and it’s scope is inside the method.
+* If you try to print the ‘x’ inside the methodOne(), the value of local variable is printed but not that of global variable
+* Because, local ‘x’ shadows or hides global ‘x’. This is called variable hiding or shadowing. 
 ### Ques-8 ###
 Does static methods overridden.
 ### Ques-9 ###
