@@ -44,6 +44,9 @@ public class Product {
 ### Ques-2 ###
 **Does toString() method present in java.lang.Object class? If yes what the implementaion for toString() method given by java.lang.Object class**
 * Yes, the toString() is present in java.lang.Object class.
+* The toString() method returns the string representation of the object
+* By overriding toString(), we can get the desired output, such as states of an object.
+* By applying toString() on an object of a class, it will retuen the fully qualified class name and hexadecimal representation of hashCode separated by a @ symbol of the object.
 ### Ques-3 ###
 **Override toString() method in the class A (as given below) such that it will print the value of i, j, k**
 ```java
@@ -146,8 +149,8 @@ class A {
 ```
 ### Ques-4 ###
 **What is StackOverflowError. When it occurs. It comes under which package in java library**  
-* StackOverflowError id a compile time error in java.  
-* It arrises due to recursive function call, that finally leads to an infinity loop and finally JVM goes out of memory for the program.  
+* StackOverflowError is a compile time error in java.  
+* It arises due to recursive function call, that finally leads to an infinity loop and finally JVM goes out of memory for the program.  
 * This usually happens if we do not put a terminating code to the recursive funtion call.
 * It comes under the library : java.lang.StackOverflowError  
 
@@ -176,8 +179,9 @@ class A
     }
 }
 ```
-```java
-```
+* Yes, the above code will compile fine.
+* But it will throw RunTime error : java.lang.StackOverflowError
+* It happens because of the statement new A(10); calls the parameterized constructor and again the this(); inside parameterized constructor will invoke again the no argument constructor, and hence finally fall in a recursive infinity loop.
 ### Ques-6 ###
 **Will the below code compile. If not why**
 ```java
