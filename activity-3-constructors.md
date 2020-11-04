@@ -249,6 +249,7 @@ class A
     }
 }
 ```
+* On callinng the constructor, yes the code will compile but creat the error : StackOverflowError.
 ### Ques-9 ###
 **Why the below code won't compile?**
 ```java
@@ -291,6 +292,9 @@ class A
 ```
 ***Output***  
 False
+* Inside class Test, we have created an object and assigned to an instance "a". So the call to constructor with no parameter will happen.
+* But inside the no parameter constructor we have invoked the one parameter constructor using new keyword not by this. So inside one parameter constructor,the this will refer to the newly created object not the "a" instance and hence value of hashvalue will be updated for the new object only.
+* So, the a.hasvalue gives the default integer value as 0 and a.hashCode() will produce the memory location whill will never be 0. Hence output is coming as false.
 ### Ques-11 ###
 **Find the output with explanation?**
 ```java
@@ -317,6 +321,7 @@ class A
     }
 }
 ```
+* invoking one parameter constructor will also update the value for object "a" hence the value of hashvalue and hashCode() will be same.
 ### Ques-12
 **Access Modifiers & Packages. Find the compilation errors & why? Find the output also by fixing them.**
 ```java
@@ -351,6 +356,55 @@ class B
 	System.out.println(a.j);
 	System.out.println(a.k); // why this is not accessible?
   }
+}
+```
+## soln.
+### Errors :
+***Inside same package (com.pkg1)  
+inside same class :***
+private, public, protected, default acces modiferes are accessible  
+***Inside same package (com.pkg1)  
+different class:***
+ public, protected, default acces modiferes are asscesable but private not accessible.   
+ ***Different package (com.pkg1)***
+ Only public access modifier is accesable  
+ 
+* Hence for com.pkg1 : inside class B the public and default field is accesible but the private one is not accessible.
+
+**Solution to the error**
+* We can define a getter for the private field and access the value using the instance of class A. the code() is given below
+```java
+package com.pkg1;
+
+public class B {
+   public static void main(String[] args) {
+       A a = new A();
+//        System.out.println(a.i); // private access so not accessible
+       System.out.println(a.getI()); // definig a public getter
+       System.out.println(a.j);
+       System.out.println(a.l);
+       System.out.println(a.k); // why this is accessible?
+   }
+```
+### Errors for com.pkg2 :
+
+* Only sout(a.j); is accessible
+* Other two have private and default access so these can't be accessible,
+
+**Solution to the error**
+* We have to import the package com.pkg1; and also need getters inside class A of pkg1 to access the field. The code is as follows
+```java
+package org.com.pkg2;
+import org.com.pkg1.*; // importing pacjage
+public class B {
+    public static void main(String[] args) {
+        A a = new A();
+        System.out.println(a.i);
+        System.out.println(a.getI()); // using getters
+        System.out.println(a.getK()); // using getters
+        System.out.println(a.j);
+//        System.out.println(a.k); // default modifiers not accessible
+    }
 }
 ```
 ### Ques-13 ###
