@@ -200,8 +200,9 @@ class A
     }
 }
 ```
-```java
-```
+* No, this time the code will not compile, it will show compile time error of Recursive Constructor Invokation
+* Here a compile time error occurs as we are invokinng constructor using this(), which will refer to the same object & same object calling to the constructor, but in the above case the new keyword would creat new object each time for invoking the constructor, so that program will go out of memory of JVM where as this program will throw compile time error.
+
 ### Ques-7 ###
 **Find the output with explanation**
 ```java
@@ -236,7 +237,8 @@ class A
 ```
 ***Output***   
 even
-### Ques-9 ###
+* The statement this(10); will invoke the parameterized constructore and inside that the value of x will be updated to 10 and 10%2 will be equal to zero, giving output as even.
+### Ques-8 ###
 **Will the below code compile?**
 ```java
 class A
@@ -247,7 +249,7 @@ class A
     }
 }
 ```
-### Ques-10 ###
+### Ques-9 ###
 **Why the below code won't compile?**
 ```java
 class A
@@ -260,7 +262,7 @@ class A
 ```
 ***This code will show compile time error : recurrsive contructor invokation***
 
-### Ques-11 ###
+### Ques-10 ###
 **Find the output with explanation?**
 ```java
 public class Test {
@@ -289,7 +291,7 @@ class A
 ```
 ***Output***  
 False
-### Ques-12 ###
+### Ques-11 ###
 **Find the output with explanation?**
 ```java
 public class Test {
@@ -315,7 +317,7 @@ class A
     }
 }
 ```
-### Ques-13
+### Ques-12
 **Access Modifiers & Packages. Find the compilation errors & why? Find the output also by fixing them.**
 ```java
 package com.pkg1;
@@ -351,7 +353,7 @@ class B
   }
 }
 ```
-### Ques-14 ###
+### Ques-13 ###
 **Why we use getters and setters for a class. Give an example**
 * Getters and setters are used to protect your data, particularly when creating classes.
 * For each instance variable, a getter method returns its value while a setter method sets or updates its value. 
@@ -379,6 +381,6 @@ public static void main(String[] args) {
 ```
 **Output**    
 Red
-### Ques-15 ###
+### Ques-14 ###
 **Why it is good to have private fields with public getters & setters?**
 * making the field private while the getter/setter method is public, so it can be accessed by any packages.
