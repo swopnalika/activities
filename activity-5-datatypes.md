@@ -34,6 +34,8 @@
 **convert string(decimal value) to long, int, short, byte**
 
 **Understand the wrapper class hierachy. Explain the wrapper child classes for Number class**
+* All the wrapper classes (Integer, Long, Byte, Double, Float, Short) are subclasses of the abstract class Number.
+* The Number class is part of the java.lang package.
 
 
 **Ques-Define auto boxing & auto unboxing with example**
