@@ -46,6 +46,28 @@ System.out.println(a+" "+i+" "+j);
  }
 }  
 ```
+***Output***  
+20 20 20
+
+* The automatic conversion of wrapper type into its corresponding primitive type is known as unboxing.
+* It is the reverse process of autoboxing.
+```java
+public class WrapperExample2{   
+ 
+public static void main(String args[]){
+ 
+//Converting Integer to int    
+Integer a=new Integer(3);    
+int i=a.intValue(); //converting Integer to int explicitly  
+int j=a; //unboxing, now compiler will write a.intValue() internally    
+    
+System.out.println(a+" "+i+" "+j);    
+ }
+}
+```
+***Output***  
+3 3 3  
+
 **Ques-convert string(decimal value) to long, int, short, byte**
 
 **Ques-Understand the wrapper class hierachy. Explain the wrapper child classes for Number class**
