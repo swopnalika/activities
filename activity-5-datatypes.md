@@ -29,11 +29,26 @@
 
 **Represent whole numbers (+ve / -ve ) or float point numbers (+ve / -ve) in binary format**
 
-**convert between primtiive type and wrapper types**
+**Ques-convert between primtiive type and wrapper types**
+* The automatic conversion of primitive data type into its corresponding wrapper class is known as autoboxing.
+* For example, byte to Byte, char to Character, int to Integer, long to Long, float to Float, boolean to Boolean, double to Double, and short to Short.
+```java
+public class WrapperExample1{ 
+ 
+public static void main(String args[]){  
 
-**convert string(decimal value) to long, int, short, byte**
+ //Converting int into Integer  
+int a=20;  
+Integer i=Integer.valueOf(a); //converting int into Integer explicitly  
+Integer j=a; //autoboxing, now compiler will write Integer.valueOf(a) internally  
+  
+System.out.println(a+" "+i+" "+j);  
+ }
+}  
+```
+**Ques-convert string(decimal value) to long, int, short, byte**
 
-**Understand the wrapper class hierachy. Explain the wrapper child classes for Number class**
+**Ques-Understand the wrapper class hierachy. Explain the wrapper child classes for Number class**
 * All the wrapper classes (Integer, Long, Byte, Double, Float, Short) are subclasses of the abstract class Number.
 * The Number class is part of the java.lang package.
 
