@@ -88,7 +88,8 @@ False
 * So obj1.hashCode() == obj2.hashCode() will not be same hence O/P comes False  
 * The getClass() methods returns the class name of the Object hence O/P comes to be : class Test.
 
-**Ques-6** Find the output?
+**Ques-6  
+Find the output?**
 ```java
 public class Test {
     int x;
@@ -102,8 +103,9 @@ public class Test {
 }
 ```
 * 10(as new Test(10) will invoke the constructor and updates the field value to 10 and t.x will give the O/P as 10 )  
-**Ques-7**  
- Why below code will not compile? What is the fix we have to do so that the code will compile.
+
+**Ques-7   
+ Why below code will not compile? What is the fix we have to do so that the code will compile.**
 ```java
 public class Test {
     int x;
@@ -118,8 +120,8 @@ public class Test {
 ```
 * The above code will give compile time error as the user defind constructor has one argument where as, we have not pass one value of type int in the constructor calling part.
 * A fix to the program would be, to pass an int value as the constructor parameter in the constructor invoking part.  
-**Ques-8**
-Will below code will compile?
+**Ques-8  
+Will below code will compile?**  
 ```java
 public class Test {
     int x;
