@@ -1,5 +1,5 @@
-**Ques-1**   
- Example with code to show state and behaviour of an object where behaviour depends upon the state of object?
+**Ques-1     
+ Example with code to show state and behaviour of an object where behaviour depends upon the state of object?**
  ```java
  package org.activitypractice;
 
@@ -44,19 +44,28 @@ public class StateAndBehavior {
 * We have accesed the behavior of the states of the objects in the behaviour part.
 
 
-**Ques-2**  
-What is the definition of hashcode as per java 8 document?
+**Ques-2    
+What is the definition of hashcode as per java 8 document?**  
+* It Returns a hash code value for the object. 
+* This method is supported for the benefit of hash tables such as those provided by HashMap. 
+* Whenever it is invoked on the same object more than once during an execution of a Java application, the hashCode method must consistently return the same integer, provided no information used in equals comparisons on the object is modified. 
+* This integer need not remain consistent from one execution of an application to another execution of the same application. If two objects are equal according to the equals(Object) method, then calling the hashCode method on each of the two objects must produce the same integer result. 
+* It is not required that if two objects are unequal according to the equals(java.lang.Object) method, then calling the hashCode method on each of the two objects must produce distinct integer results. However, the programmer should be aware that producing distinct integer results for unequal objects may improve the performance of hash tables.
 
-**Ques-3**  
- What is the fully qualified name of Object class in java ?
+**Ques-3   
+ What is the fully qualified name of Object class in java ?**  
+ The fully qualifued class name of Object Class in java is : java.lang.Object
 
-**Ques-4**  
-Object class is in which package ?
+
+
+**Ques-4  
+Object class is in which package?**   
+Object class is in which package ? It is present in java.lang package.
 
 * Note : Find the output? Always write the explanation for the output. why you are getting that output?
 
-**Ques-5**
-Find the output?
+**Ques-5  
+Find the output?**
 ```java
 public class Test
 {
