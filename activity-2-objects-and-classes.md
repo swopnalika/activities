@@ -79,6 +79,15 @@ public class Test
   }
 }
 ```
+* False  
+class Test  
+False  
+
+***Explanation***
+* Two different objects obj1 and obj2 has two different hashCodes  
+* So obj1.hashCode() == obj2.hashCode() will not be same hence O/P comes False  
+* The getClass() methods returns the class name of the Object hence O/P comes to be : class Test.
+
 **Ques-6** Find the output?
 ```java
 public class Test {
@@ -92,6 +101,7 @@ public class Test {
     }
 }
 ```
+* 10(as new Test(10) will invoke the constructor and updates the field value to 10 and t.x will give the O/P as 10 )  
 **Ques-7**  
  Why below code will not compile? What is the fix we have to do so that the code will compile.
 ```java
@@ -106,6 +116,8 @@ public class Test {
     }
 }
 ```
+* The above code will give compile time error as the user defind constructor has one argument where as, we have not pass one value of type int in the constructor calling part.
+* A fix to the program would be, to pass an int value as the constructor parameter in the constructor invoking part.  
 **Ques-8**
 Will below code will compile?
 ```java
@@ -124,6 +136,7 @@ public class Test {
     }
 }
 ```
+* The above code will compile fine because we have defind a no argument constructor for the call : new Test() and hence t.x will give a O/P as 0(Default value)  
 **Ques-9** Find the output?
 ```java
 public class Test {
